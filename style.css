@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  
+}
+
+*{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+	font-family:'Poppins', sans-serif;
+	font-weight:700;
+
+}
+
+body{background:#F8F6FB;overflow:hidden;}
+
+#home{
+	background:#1F405E;
+}
+
+header{
+	background:#1F405E;
+	height:10vh;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:0 200px;
+}
+
+nav{
+	flex-direction:row;
+}
+
+.selected{
+	border-bottom:3px solid #F8F6FB;
+}
+
+.mainNav{
+	list-style:none;
+}
+
+.mainNav li{
+	display:inline-block;
+	margin:0 20px;
+}
+
+.mainNav li a{
+	text-decoration:none;
+	color:#F8F6FB;
+	transition: all 0.2s ease;
+}
+
+.mainNav li a:hover{
+	border-bottom:3px solid #F8F6FB;
+}
+
+label{
+	display: none;
+}
+
+#toggle{
+	display: none;
+}
+
+#homeContent{
+	padding:0 200px;
+	height:90vh;
+	background:#1F405E;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+
+#homeText h1{
+	color:#F8F6FB;
+	font-style:italic;
+	font-size:4em;
+}
+
+.cta{
+	text-decoration:none;
+	background:#F8F6FB;
+	padding:15px 40px;
+	margin-top:20px;
+	color:#1F405E;
+	border:3px solid #F8F6FB;
+	border-radius:30px;
+	font-weight:700;
+	transition: all 0.4s ease-in-out;
+}
+
+.cta:hover{
+	background:transparent;
+	border:3px solid #F8F6FB;
+	color:#F8F6FB;
+}
+/*----------------------OUR WORK----------------------*/
+#ourWork{
+	height:90vh;
+}
+
+#ourWork h1{
+	text-align:center;
+	padding-top:50px;
+}
+
+.mainWork{
+	display:flex;
+	justify-content:space-around;
+	padding:50px 330px 0;
+}
+
+.mainWorkTab{
+	width:600px;
+	height:300px;
+	background:white;
+	text-align:center;
+	padding-top:50px;
+	border-radius:5px;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+	transition: all 0.2s ease;
+}
+
+.mainWorkTab:hover{
+	cursor:pointer;
+    transform: scale(1.05);
+  
+  
+}
+
+.mainWorkTab h2{
+	color:#1F405E;
+}
+
+.mainWorkTab p{
+	color:#262626;
+}
+
+.otherWork{
+	display:flex;
+	justify-content:space-around;
+	padding:40px 330px 0;
+}
+
+.otherWorkTab{
+	display:flex;
+	flex-direction:column;
+	width:280px;
+	height:300px;
+	background:white;
+	text-align:center;
+	border-radius:5px;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+	transition: all 0.2s ease;
+}
+
+h1{font-style:italic;
+color:#1F405E;}
+.otherWorkTab h2{
+	color:#1F405E;
+}
+
+.otherWorkTab p{
+	color:#262626;
+}
+
+.otherWorkTab p{
+	width:200px;
+	text-align:center;
+	margin-left:40px;
+	margin-top:10px;
+}
+
+.otherWorkTab:hover{
+	cursor:pointer;
+	transform: scale(1.05);
+}
+
+.otherWorkSlika{
+	height:50%;
+	border-bottom-left-radius:20px;
+	border-bottom-right-radius:20px;
+	
+	
+}
+
+.prva{
+	background:url('images/ourWork/kapija.jpg');	
+	background-size:cover;
+}
+
+.druga{
+	background:url('images/ourWork/metgal.jpg');	
+	background-size:cover;
+}
+
+.treca{
+	background:url('images/ourWork/olsis.jpg');	
+	background-size:cover;
+}
+
+.cetvrta{
+	background:url('images/ourWork/gradjlim.jpg');	
+	background-size:cover;
+}
+
+.otherWorkText {
+	padding-top:30px;
+}
+
+
+
+
+
+/*-------------------Our Work Pages--------------------*/
+
+#laser{
+	background:url('images/ourWork/laser.png');
+	background-size:100%;
+	background-position:50% 15%;
+	background-repeat:fit;
+}
+
+#dekoPaneli{
+	background:url('images/ourWork/deco.png');
+	background-size:100%;
+	background-position:50% 30%;
+	background-repeat:fit;
+}
+
+#olucniSistemiPage img{
+	 display: block;
+	 margin-left: auto;
+	 margin-right: auto;
+	 width: 70%;
+}
+
+.pageContent{
+	padding-left:200px;
+	padding-right:200px;
+	padding-top:50px;
+}
+
+.pageContent h1{
+	font-size:3em;
+}
+
+.pageContent p{
+	padding-top:10px;
+	color:gray;
+}
+
+.pageMenu{
+	display:flex;
+}
+
+.laserTab{
+	display:flex;
+	margin-top:50px;
+	margin-right:20px;
+	width:700px;
+	height:400px;
+	background:#1F405E;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+
+}
+
+#laserImgL{
+	flex:1;
+	background:url('images/ourWork/laserLim.jpg');
+	background-size:cover;
+}
+
+#laserTextL{
+	flex:1;
+	background:white;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	text-align:center;
+	justify-content:center;
+	color:#1F405E;
+}
+
+#laserText p{
+	padding-top:40px;
+	color:#262626;
+}
+
+#laserImgC{
+	flex:1;
+	background:url('images/ourWork/laserCev.jpg');
+	background-position:90%;
+	background-size:cover;
+}
+
+#laserCev i{
+	color:black;
+}
+
+#laserTextC{
+	flex:1;
+	background:white;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	text-align:center;
+	justify-content:center;
+	color:#1F405E;
+}
+
+
+
+.previous {
+	font-size:20px;
+    padding: 8px 16px;
+    text-decoration:none;
+    background-color: #1F405E;
+    color: #F8F6FB;
+}
+
+.round{
+	border-radius:50%;
+}
+
+
+/* KONTAKT */
+
+/*#contactContent{
+	text-align:center;
+	height:90vh;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+
+#contactContent h3{
+	padding-top:10px;
+}
+
+#contactContent h1{
+	
+	
+}*/
+
+
+#contactContent{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+    width: 100%;
+
+    background-color: #1F405E; 
+	color:#F8F6FB;
+}
+
+#contactContent h1{
+	padding-top:50px;
+	color:#F8F6FB;
+}
+
+#contactContent p{
+	color:#F8F6FB;
+	padding-top:20px;
+}
+
+#contactForm{
+	display:flex;
+	z-index:999;
+	margin-top:50px;
+	background:#F8F6FB;
+	width:1200px;
+	height:500px;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+#contactMessage{
+	flex:2;
+}
+
+#contactInfo{
+	flex:1;
+	background:#0086FF;
+}
+
+
+#white{
+	z-index:0;
+	position:fixed;
+	background:white;
+	bottom:0;
+	left:0;
+	right:0;
+	width:100%;
+	height:40vh;
+}
+
+#dekoMenu{
+	margin-top:10px; 
+}
+
+#dekoMenu ul{list-style:none;}
+
+#dekoMenu ul li{
+	display:inline-block;
+	padding-top:10px;
+	padding-bottom:10px;
+	
+}
+
+
+
+#dekoMenu a{
+	background:transparent;
+	text-decoration:none;
+	color:#1F405E;
+	padding:10px 25px;
+	transition:all 0.5s ease-in-out;
+	border-radius:20px;
+}
+
+#dekoMenu a:hover{
+	border-radius:20px;
+	background:#1F405E;
+	color:#F8F6FB;
+}
+#dekoMenu a:hover ~ .dekoSelected{
+	background:white !important;
+}
+
+.dekoSelected{
+	padding:10px 25px;
+	border-radius:20px;
+	background:#1F405E !important;
+	color:white !important;
+}
+
+/*----------------------------*/
+
+.gallery{
+	margin-top:50px;
+	display:grid;
+	grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+	grid-gap:0.3rem;
+}
+
+.img-container{
+	overflow:hidden;
+}
+
+.img-container img{
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	cursor:pointer;
+	transition:0.25s ease-out;
+}
+
+.img-container img:hover{
+	transform:scale(1.2);
+}
+
+.modal{
+	background:rgba(0,0,0,0.8);
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	opacity:0;
+	pointer-events:none;
+	transition:0.25s ease-out;
+}
+
+.modal.open{
+	opacity:1;
+	pointer-events:all;
+}
+
+.full-img{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%) scale(0.5);
+	transition:all 0.5s ease-out;
+}
+
+.full-img.open{
+	transform:translate(-50%,-50%) scale(1);
+}
+
+
+@media only screen and (max-width: 1100px)
+{	
+	header{
+		padding-top: 30px;
+		flex-direction: column;
+	}
+
+	#homeContent{
+		flex-direction: column;
+		text-align: center;
+		margin-top:200px;
+	}
+ 
+	#homeText h1{
+		font-size:3em;
+		
+	}
+
+	header img{
+		margin-bottom: 30px;
+	}
+
+	
+
+	#homeText{
+		flex:1;
+	}
+
+	.mainWork{
+		padding:50px 150px 0;
+	}
+
+	.otherWork{
+		padding:40px 150px 0;
+	}
+
+}
+
+@media only screen and (max-width:852px){
+
+	body{
+		overflow:auto;
+		overflow-x: hidden;
+	}
+	label{
+		display: block;
+		cursor: pointer;
+		color:white;
+		font-size:2em;
+	}
+
+	nav{
+		text-align: center;
+		width:100%;
+		display: none;
+	}
+
+	nav a{
+		display: block;
+	}
+
+	#toggle:checked + nav{
+		display: block;
+	}
+
+	.mainWork{
+		flex-direction: column;
+		align-items: center;
+		
+	}
+
+	.mainWorkTab{
+		transform:scale(0.9);
+	}
+
+	.otherWork{
+		flex-direction: column;
+		align-items: center;
+		
+	}
+
+	.otherWorkTab{
+		width:600px;
+		height:300px;
+		text-align:center;
+		border-radius:5px;
+		box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+		transform:scale(0.9);
+		background-attachment: cover;
+	}
+}

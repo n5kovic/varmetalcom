@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html> 
+
+	<head> 
+	
+		<title> Varmetal Pirot </title>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" href="style.css"/>
+		
+	</head>
+	
+	<body> 
+	
+		<div id="ourWork"> 
+			
+			<header> 
+			
+				<img src="images/logo.png"/>
+				
+				<nav> 
+				
+					<ul class="mainNav"> 
+					
+						<li> <a href="index.html"> POCETNA </a> </li>
+						<li> <a class="selected" href="ourWork.html"> USLUGE </a> </li>
+						<li> <a href="contact.html"> KONTAKT </a> </li>
+						<li> <a href="aboutUs.html"> O NAMA </a> </li>
+						<!--<li> <a href="faqs.html"> CESTA PITANJA </a> </li>-->
+					
+					</ul>
+				
+				</nav>
+			
+			</header>
+			
+			<h1> Nase usluge i proizvodi </h1>
+		
+			<div class="mainWork"> 
+			
+				<div class="mainWorkTab" id="laser" onclick="location.href='laser.html';"> 
+				
+					<h2> Lasersko secenje </h2>
+					
+				
+				</div>
+				
+				<div class="mainWorkTab" id="dekoPaneli" onclick="location.href='dekorativniPaneli.html';"> 
+				
+					<h2> Dekorativni paneli </h2>
+					<p> </p>
+				
+				</div>
+				
+			</div>
+			
+			<div class="otherWork"> 
+			
+				<div class="otherWorkTab" id="kapijeOgrade" onclick="location.href='kapijeOgrade.html';"> 
+					
+					<div class="otherWorkSlika prva">
+						
+					</div>
+					
+					<div class="otherWorkText "> 
+						<br>
+						<h2> Kapije i ograde </h2>
+						
+					
+					</div>
+				
+				</div>
+				
+				<div class="otherWorkTab" id="metalnaGalanterija" onclick="location.href='metalnaGalanterija.html';"> 
+				
+					<div class="otherWorkSlika druga">
+						
+					</div>
+					
+					<div class="otherWorkText"> 
+						<br>
+						<h2> Metalna galanterija </h2>
+						
+					
+					</div>
+				
+				</div>
+				
+				<div class="otherWorkTab" id="olucniSistemi" onclick="location.href='olucniSistemi.html';"> 
+					
+					
+					<div class="otherWorkSlika treca">
+						
+					</div>
+					
+					<div class="otherWorkText"> 
+						
+						<br>
+						<h2> Olucni sistemi </h2>
+						
+					
+					</div>
+					
+					
+				
+				</div>
+				
+				<div class="otherWorkTab" id="gradjevinskaLimarija" onclick="location.href='gradjevinskaLimarija.html';"> 
+				
+					<div class="otherWorkSlika cetvrta">
+						
+					</div>
+					
+					<div class="otherWorkText"> 
+						<br>
+						<h2> Gradjevinska limarija </h2>
+						
+					
+					</div>
+				
+				</div>
+				
+			
+			</div>
+		
+		</div>
+		
+		<script src="script.js"> </script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"> </script>
+
+		<script>
+			gsap.from('h1',{opacity:0, duration:1.5, y:-100})
+			gsap.from('.mainWork',{opacity:0, duration:1,delay:0.5,y:-300})
+			gsap.from('.otherWork',{opacity:0,duration:1,delay:1,y:-600})
+			
+		</script>
+		
+	</body>
+
+</html>
